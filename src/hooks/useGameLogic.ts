@@ -71,8 +71,8 @@ export function useGameLogic(level: GameLevel) {
       const randomHole = hiddenHoles[Math.floor(Math.random() * hiddenHoles.length)];
       const holeIndex = randomHole.index;
 
-      // 정답 또는 오답 결정 (정답 확률 40%)
-      const isCorrect = Math.random() < 0.4;
+      // 정답 또는 오답 결정 (정답 확률 50%)
+      const isCorrect = Math.random() < 0.5;
       const text = isCorrect ? targetText : getRandomText(true);
 
       // 새로운 두더지 배열 생성
