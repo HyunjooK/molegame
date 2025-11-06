@@ -99,13 +99,14 @@ export const GameScreen: React.FC<GameScreenProps> = ({ level, onGameEnd }) => {
           <span className="timer-icon">⏱️</span>
           <span className="timer-value">{timeLeft}초</span>
         </div>
-        <div className="mission">
-          <span className="mission-text">"{targetText}"를 찾으세요!</span>
-        </div>
         <div className="score">
           <span className="score-label">점수</span>
           <span className="score-value">{stats.score}</span>
         </div>
+      </div>
+      
+      <div className="mission-banner">
+        <div className="mission-text">"{targetText}"를 찾으세요!</div>
       </div>
 
       <div className="game-board">
